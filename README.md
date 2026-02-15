@@ -1,103 +1,68 @@
-# Emergent-CA-Intelligence
+# Cellular Automata Microfabrication - Colombo (2017)
 
-Este projeto investiga a possibilidade de gerar inteligência
-através de Autômatos Celulares Adaptativos, inspirado em conceitos de 
-Computação Emergente e neuroplasticidade.
+Este projeto é uma implementação acadêmica dos modelos e algoritmos de Autômatos Celulares (AC) propostos por Fábio Belotti Colombo em sua tese de doutorado pela Escola Politécnica da USP (2017).
 
-## Objetivo
-Criar uma matriz onde as regras de transição locais convergem para estados 
-de processamento de informação estáveis.
-
-## Referências Culturais
-Inspirado na exploração de consciência digital e sistemas emergentes vistos 
-na ficção científica (como o conceito de "Thronglets").
-
-## Configuração do Ambiente
-
-Esta seção descreve, de forma estruturada e sequencial, a preparação do ambiente
-de desenvolvimento para o projeto Emergent-CA-Intelligence.
+O foco reside na simulação física de processos de fabricação de semicondutores e microssistemas (MEMS).
 
 ---
 
-### 1. Clonagem do Repositório
+## 🔬 Escopo Científico
 
-Passo responsável por obter o código-fonte localmente.
-
-```bash
-git clone https://github.com/r7melo/Emergent-CA-Intelligence.git
-cd Emergent-CA-Intelligence
-```
+A simulação abandona métodos convencionais de rastreamento de interface (como Level Set) em favor de uma abordagem baseada em regras locais de Autômatos Celulares, garantindo alta performance e escalabilidade para estruturas 3D complexas.
 
 ---
 
-### 2. Criação do Ambiente Virtual
+## 1️⃣ Modelo de Evolução Topográfica (Corrosão e Deposição)
 
-Isola as dependências do projeto do restante do sistema.
+O motor central baseia-se no Princípio de Huygens, onde cada célula da matriz de autômatos funciona como uma fonte secundária de uma frente de onda.
 
-Sistema Unix (Linux / macOS):
+### 📌 Contador de Distância
 
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
+Cada célula armazena um vetor de distância $\\vec{D}$.
 
-Sistema Windows:
+A evolução da superfície ocorre conforme as células vizinhas propagam seus valores, minimizando o vetor resultante.
 
-```bash
-python -m venv venv
-venv\\Scripts\\activate
-```
+### 📌 Anisotropia
 
-Estado esperado:
-O terminal deve exibir o prefixo `(venv)` indicando ativação bem-sucedida.
+O modelo permite a simulação de taxas de corrosão distintas para diferentes planos cristalográficos (como os planos {100}, {110} e {111} do Silício), essencial para a fabricação de cavidades e membranas.
 
 ---
 
-### 3. Atualização do Gerenciador de Pacotes
+## 2️⃣ Modelo de Transporte de Massa (Difusão e Oxidação)
 
-Garante compatibilidade e suporte às versões mais recentes.
+Para processos que envolvem migração de átomos, o projeto utiliza o Modelo de Autômatos Celulares Multipartículas.
 
-```bash
-pip install --upgrade pip
-```
+### 📌 Caminhada Aleatória (Random Walk)
 
----
+Simulação estocástica do movimento de dopantes para prever perfis de concentração.
 
-### 4. Instalação das Dependências
+### 📌 Oxidação Térmica
 
-Modo padrão (via requirements.txt):
-
-```bash
-pip install -r requirements.txt
-```
-
-### 5. Congelamento do Ambiente
-
-Registre o estado exato do ambiente:
-
-```bash
-pip freeze > requirements.txt
-```
+Modelagem da reação química na interface $Si/SiO_2$ e a expansão volumétrica resultante do crescimento do óxido.
 
 ---
 
-### 6. Execução do Projeto
+## 📐 Parâmetros de Validação
 
-Execução direta do ponto de entrada principal:
+A precisão dos algoritmos é validada através de métricas descritas no Capítulo 3 da tese, garantindo que a discretização do espaço (voxels) não comprometa a física do processo.
 
-```bash
-python main.py
-```
+### 🔢 Número de iterações ($N_p$)
+
+Cálculo do tempo discreto necessário para atingir profundidades físicas reais.
+
+### 🔷 Vizinhança de von Neumann
+
+Uso de 6 vizinhos (em 3D) para otimizar o processamento sem perda de resolução topográfica.
 
 ---
 
-### 7. Encerramento do Ambiente
+## 📖 Referência Principal
 
-Desativa o ambiente virtual ao finalizar a sessão.
+COLOMBO, Fábio Belotti.
 
-```bash
-deactivate
-```
+Aplicação de autômatos celulares para simulação de processos de microfabricação.
+
+2017. Tese (Doutorado em Engenharia Elétrica) - Escola Politécnica, Universidade de São Paulo, São Paulo, 2017.
 
 
 ## Licença
