@@ -56,13 +56,10 @@ Uso de 6 vizinhos (em 3D) para otimizar o processamento sem perda de resolução
 
 ---
 
-## 📖 Referência Principal
+## 📖 Referência
 
-COLOMBO, Fábio Belotti.
-
-Aplicação de autômatos celulares para simulação de processos de microfabricação.
-
-2017. Tese (Doutorado em Engenharia Elétrica) - Escola Politécnica, Universidade de São Paulo, São Paulo, 2017.
+- [FÁBIO BELOTTI COLOMBO - USP - 2017](https://www.teses.usp.br/teses/disponiveis/3/3140/tde-07032017-144709/publico/FabioBelottiColomboCorr17.pdf)
+- [BRUNO MARTINS SIQUEIRA - MNPEF - 2022](https://repositorio.uft.edu.br/bitstream/11612/5515/1/BRUNO%20MARTINS%20SIQUEIRA%20-%20DISSERTA%C3%87%C3%83O.pdf)
 
 
 ## Licença
