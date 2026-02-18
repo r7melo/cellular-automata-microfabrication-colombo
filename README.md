@@ -59,6 +59,7 @@ Uso de 6 vizinhos (em 3D) para otimizar o processamento sem perda de resolução
 ## 📖 Referência
 
 - [FÁBIO BELOTTI COLOMBO - USP - 2017](https://www.teses.usp.br/teses/disponiveis/3/3140/tde-07032017-144709/publico/FabioBelottiColomboCorr17.pdf)
+- [JOSÉ PINTO DE OLIVEIRA JÚNIOR - USP - 2008](https://teses.usp.br/teses/disponiveis/3/3140/tde-06112008-204522/publico/dissertacao_jose_versao_rev.pdf)
 - [BRUNO MARTINS SIQUEIRA - MNPEF - 2022](https://repositorio.uft.edu.br/bitstream/11612/5515/1/BRUNO%20MARTINS%20SIQUEIRA%20-%20DISSERTA%C3%87%C3%83O.pdf)
 
 
